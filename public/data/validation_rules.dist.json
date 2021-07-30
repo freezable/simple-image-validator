@@ -1,0 +1,26 @@
+[{
+    "name": "simple",
+    "file": {
+        "size": {
+            "max": 10000,
+            "min": 100
+        },
+        "name": {
+            "max": 20,
+            "min": 3
+        },
+        "mimes": [
+            "image/jpeg"
+        ]
+    },
+    "image": {
+        "height": {
+            "max": 1000,
+            "min": 100
+        },
+        "width": {
+            "max": 1000,
+            "min": 100
+        }
+    }
+}]
