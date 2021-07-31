@@ -9,3 +9,15 @@ p {
 hr {
     border-top: 0.1rem solid rgb(230, 230, 230);
 }
+
+li {
+    margin: 0px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
