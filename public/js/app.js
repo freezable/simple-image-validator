@@ -2,8 +2,8 @@
 
 class ImageValidator {
     constraintsList = [];
-    constructor(helper) {
-        fetch('data/validation_rules.json')
+    constructor(helper, rulesFile) {
+        fetch(rulesFile)
             .then(response => response.json())
             .then(data => this.constraintsList = this._mapValidationRulesToConstrains(data))
             .catch(error => console.log(error));
@@ -262,7 +262,7 @@ class App {
 }
 
 const helper = new Helper();
-const imageValidator = new ImageValidator(helper)
+const imageValidator = new ImageValidator(helper, 'data/validation_rules.json')
 const renderer = new Renderer(helper, imageValidator);
 const app = new App(renderer, "files-input", "images");
 
