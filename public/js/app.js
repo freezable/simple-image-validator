@@ -262,7 +262,7 @@ class App {
 }
 
 const helper = new Helper();
-const imageValidator = new ImageValidator(helper, 'data/validation_rules.json')
+const imageValidator = new ImageValidator(helper, 'data/validation_rules.dist.json')
 const renderer = new Renderer(helper, imageValidator);
 const app = new App(renderer, "files-input", "images");
 
